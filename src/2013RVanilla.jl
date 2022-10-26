@@ -12,7 +12,7 @@ end
 function options(version::V2013R{VanillaFlavour};
     N::Int = 60, #Number of years to calculate (from 2010 onwards)
     tstep::Int = 5, #Years per Period
-    α::Float64 = 1.01, #Elasticity of marginal utility of consumption
+    α::Float64 = 2.1, #Elasticity of marginal utility of consumption
     ρ::Float64 = 0.001, #Initial rate of social time preference per year ρ
     γₑ::Float64 = 0.3, #Capital elasticity in production function
     pop₀::Int = 6838, #Initial world population (millions)
