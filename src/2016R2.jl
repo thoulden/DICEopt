@@ -23,7 +23,7 @@ function options(version::V2016R2;
     N::Int = 100, #Number of years to calculate (from 2015 onwards)
     tstep::Int = 5, #Years per Period
     α::Float64 = 1.01, #Elasticity of marginal utility of consumption
-    ρ::Float64 = 0.015, #Initial rate of social time preference per year
+    ρ::Float64 = 0.001, #Initial rate of social time preference per year
     γₑ::Float64 = 0.3, #Capital elasticity in production function
     pop₀::Int = 7403, #Initial world population 2015 (millions)
     popadj::Float64 = 0.134, #Growth rate to calibrate to 2050 pop projection
