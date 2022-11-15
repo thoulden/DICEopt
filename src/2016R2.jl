@@ -32,7 +32,7 @@ function options(version::V2016R2;
     q₀::Float64 = 105.5, #Initial world gross output 2015 (trill 2010 USD)
     k₀::Float64 = 223.0, #Initial capital value 2015 (trill 2010 USD)
     a₀::Float64 = 5.115, #Initial level of total factor productivity
-    ga₀::Float64 = 0.15, #Initial growth rate for TFP per 5 years, originally 0.076
+    ga₀::Float64 = 0.037, #Initial growth rate for TFP per 5 years, originally 0.076
     δₐ::Float64 = 0.005, #Decline rate of TFP per 5 years
     gσ₁::Float64 = -0.0152, #Initial growth of sigma (continuous per year)
     δσ::Float64 = -0.001, #Decline rate of decarbonization per period
