@@ -156,7 +156,7 @@ function generate_parameters(c::OptionsV2016R2, model::JuMP.Model)
     cumtree[1] = 100.0;
 
     for i in 1:c.N-1
-        L[i+1] = L[i]*(1.01) #L[i]*(c.popasym/L[i])^c.popadj;
+        L[i+1] = L[i]*(1.01^5) #L[i]*(c.popasym/L[i])^c.popadj;
         A[i+1] = A[i]/(1-gₐ[i]);
         gσ[i+1] = gσ[i]*((1+c.δσ)^c.tstep);
         σ[i+1] = σ[i]*exp.(gσ[i]*c.tstep);
